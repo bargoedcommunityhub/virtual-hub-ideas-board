@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!----------------------------------------------------------->
+    <!-- Meta Tags -->
+    <!----------------------------------------------------------->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----------------------------------------------------------->
+    <!-- Title -->
+    <!----------------------------------------------------------->
+    <title>Ideas Board</title>
+    <!----------------------------------------------------------->
+    <!-- Google Fonts -->
+    <!----------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!----------------------------------------------------------->
+    <!-- CSS Style Sheets -->
+    <!----------------------------------------------------------->
+    <link rel="icon" type="image/png" href="images/tab-logo.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!----------------------------------------------------------->
+    <!-- Navigation Bar -->
+    <!----------------------------------------------------------->
+    <nav class="nav collapsible">
+      <a href="/" class="nav__brand">
+        <img src="images/community-placeholder-logo.png" alt="" />
+      </a>
+    </nav>
+
+    <!----------------------------------------------------------->
+    <!-- Hero Block -->
+    <!----------------------------------------------------------->
+    <h1 class="main-title">Community Ideas Board</h1>
+    <section class="Block">
+      <div class="drag-container grid grid--1x4">
+        <ul class="drag-list">
+          <!-- Putting People First Column -->
+          <li class="drag-column ppf-column">
+            <header class="block__header msg__content">
+              <h2 class="block__heading">Putting People First</h2>
+            </header>
+            <!-- Putting People First Content -->
+            <div id="ppf-content" class="custom-scroll">
+              <ul
+                class="drag-item-list"
+                id="ppf-list"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+                ondragenter="dragEnter(0)"
+              ></ul>
+            </div>
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+              <div class="add-btn" onclick="showInputBox(0)">
+                <span class="plus-sign">+</span>
+                <span>Add Item</span>
+              </div>
+              <div class="add-btn solid" onclick="hideInputBox(0)">
+                <span>Save Item</span>
+              </div>
+            </div>
+            <div class="add-container">
+              <div class="add-item" contenteditable="true"></div>
+            </div>
+          </li>
+
+          <!-- Sharing & Building Power Column -->
+          <li class="drag-column sbp-column">
+            <header class="block__header msg__content">
+              <h2 class="block__heading">Sharing & Building Power</h2>
+            </header>
+            <!-- Sharing & Building Power Content -->
+            <div id="sbp-content" class="custom-scroll">
+              <ul
+                class="drag-item-list"
+                id="sbp-list"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+                ondragenter="dragEnter(1)"
+              ></ul>
+            </div>
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+              <div class="add-btn" onclick="showInputBox(0)">
+                <span class="plus-sign">+</span>
+                <span>Add Item</span>
+              </div>
+              <div class="add-btn solid" onclick="hideInputBox(0)">
+                <span>Save Item</span>
+              </div>
+            </div>
+            <div class="add-container">
+              <div class="add-item" contenteditable="true"></div>
+            </div>
+          </li>
+
+          <!-- Talking & Listening Together Column -->
+          <li class="drag-column tlt-column">
+            <header class="block__header msg__content">
+              <h2 class="block__heading">Talking & Listening Together</h2>
+            </header>
+            <!-- Talking & Listening Together Content -->
+            <div id="tlt-content" class="custom-scroll">
+              <ul
+                class="drag-item-list"
+                id="tlt-list"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+                ondragenter="dragEnter(2)"
+              ></ul>
+            </div>
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+              <div class="add-btn" onclick="showInputBox(0)">
+                <span class="plus-sign">+</span>
+                <span>Add Item</span>
+              </div>
+              <div class="add-btn solid" onclick="hideInputBox(0)">
+                <span>Save Item</span>
+              </div>
+            </div>
+            <div class="add-container">
+              <div class="add-item" contenteditable="true"></div>
+            </div>
+          </li>
+
+          <!-- Joining Together Column -->
+          <li class="drag-column jt-column">
+            <header class="block__header msg__content">
+              <h2 class="block__heading">Uniting Together</h2>
+            </header>
+            <!-- Joining Together Content -->
+            <div id="jt-content" class="custom-scroll">
+              <ul
+                class="drag-item-list"
+                id="jt-list"
+                ondrop="drop(event)"
+                ondragover="allowDrop(event)"
+                ondragenter="dragEnter(3)"
+              ></ul>
+            </div>
+            <!-- Add Button Group -->
+            <div class="add-btn-group">
+              <div class="add-btn" onclick="showInputBox(0)">
+                <span class="plus-sign">+</span>
+                <span>Add Item</span>
+              </div>
+              <div class="add-btn solid" onclick="hideInputBox(0)">
+                <span>Save Item</span>
+              </div>
+            </div>
+            <div class="add-container">
+              <div class="add-item" contenteditable="true"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
